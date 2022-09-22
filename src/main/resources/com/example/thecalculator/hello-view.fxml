@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="337.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.thecalculator.HelloController">
+   <children>
+      <TextField fx:id="textField" alignment="BOTTOM_RIGHT" editable="false" layoutX="1.0" layoutY="50.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="57.0" prefWidth="331.0" text="0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+<!--      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="320.0">-->
+<!--        <menus>-->
+<!--          <Menu mnemonicParsing="false" text="File">-->
+<!--            <items>-->
+<!--              <MenuItem mnemonicParsing="false" text="Close" />-->
+<!--            </items>-->
+<!--          </Menu>-->
+<!--          <Menu mnemonicParsing="false" text="Edit">-->
+<!--            <items>-->
+<!--              <MenuItem mnemonicParsing="false" text="Delete" />-->
+<!--            </items>-->
+<!--          </Menu>-->
+<!--          <Menu mnemonicParsing="false" text="Help">-->
+<!--            <items>-->
+<!--              <MenuItem mnemonicParsing="false" text="About" />-->
+<!--            </items>-->
+<!--          </Menu>-->
+<!--        </menus>-->
+<!--      </MenuBar>-->
+      <FlowPane layoutX="4.0" layoutY="107.0" prefHeight="257.0" prefWidth="331.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clearTextField" prefHeight="50.0" prefWidth="80.0" text="AC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="()">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="\%">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#divide" prefHeight="50.0" prefWidth="80.0" text="/">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonSeven" prefHeight="50.0" prefWidth="80.0" text="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonEight" prefHeight="50.0" prefWidth="80.0" text="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonNine" prefHeight="50.0" prefWidth="80.0" text="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" prefWidth="80.0" text="X">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonFour" prefHeight="50.0" prefWidth="80.0" text="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonFive" prefHeight="50.0" prefWidth="80.0" text="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonSix" prefHeight="50.0" prefWidth="80.0" text="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#subtract" prefHeight="50.0" prefWidth="80.0" text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonOne" prefHeight="50.0" prefWidth="80.0" text="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonTwo" prefHeight="50.0" prefWidth="80.0" text="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonThree" prefHeight="50.0" prefWidth="80.0" text="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="80.0" text="+">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="+/-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonZero" prefHeight="50.0" prefWidth="80.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text=".">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#calculate" prefHeight="50.0" prefWidth="80.0" text="=">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <Text fx:id="savedNumber" layoutX="1.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="331.33333333333326" />
+   </children>
+</AnchorPane>
